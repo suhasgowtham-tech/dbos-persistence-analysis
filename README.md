@@ -19,6 +19,7 @@ graph TD
     style DBOS fill:#1a1a1a,stroke:#00ff00,stroke-width:2px,color:#fff
     style State fill:#1a1a1a,stroke:#00ff00,stroke-width:2px,color:#fff
     style Client fill:#333,stroke:#fff
+```
 
 ## 📡 Telemetry & Stress Test Results
 | Test Case | Expected Result | Observed Result |
