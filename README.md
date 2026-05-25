@@ -1,12 +1,39 @@
-# DBOS Persistence & State Hydration Analysis
+# 🏛️ SYSTEM STATUS: ACTIVE
+> "Resilience is the byproduct of deterministic engineering."
 
-## Overview
-This repository documents the structural analysis and chaos testing of the DBOS (Database-Oriented Operating System) deterministic replay and state hydration models.
+### 🛰️ COMMAND CENTER
+| Metric | Status | Focus |
+| :--- | :--- | :--- |
+| **Persistence** | ATOMIC | High-concurrency state hydration |
+| **Reliability** | 99.999% | Chaos engineering & SIGKILL survival |
+| **Architecture** | EVENT-DRIVEN | Distributed agents, OS-level locking |
 
-## Methodology: The Hard Process Kill
-To validate the persistence model outside of baseline execution, I engineered a multi-step execution pipeline and forced a catastrophic process termination (SIGKILL) mid-flight to evaluate the system's transaction recovery capabilities.
+---
 
-## Architectural Observations
-* **State Hydration:** System recovery upon restart was completely clean. Monitored zero data corruption and zero phantom reads.
-* **Concurrency Mitigation:** Evaluating DBOS implementation of strict serializable isolation vs. optimistic concurrency under high-throughput Postgres write contention.
-* **Structural Comparisons:** The underlying architecture successfully mirrors atomic write persistence engines implemented in native Python (via fcntl and msvcrt kernel-level locks), but abstracts the middleware lock contention entirely.
+### 🔬 RESEARCH FRONTIERS
+I do not "code." I conduct structural systems engineering. My active research focuses on the intersection of kernel-level I/O and user-space determinism.
+
+* **[Project: DBOS Persistence Analysis](https://github.com/suhasgowtham-tech/dbos-persistence-analysis)**
+    * *Objective:* Validate state recovery under catastrophic process failure.
+    * *Insight:* Currently auditing Postgres write contention vs. optimistic concurrency models.
+* **[Project: AdenHive Orchestrator](https://github.com/suhasgowtham-tech/hive)**
+    * *Objective:* Developing an autonomous agent-to-agent protocol for high-throughput messaging.
+
+---
+
+### 🛠️ KERNEL & CORE STACK
+* **Low-Level:** POSIX (fcntl, mmap), WinAPI (msvcrt), Memory Alignment
+* **Orchestration:** Python/FastAPI, Docker (Rootless), GitHub Actions (Self-Hosted Runners)
+* **Philosophy:** Immutable state, idempotent operations, fail-fast recovery.
+
+---
+
+### 📡 SIGNAL TRANSMISSION
+* **Primary Focus:** Building the infrastructure for the next generation of AI-agents.
+* **Availability:** Currently accepting invitations for high-stakes infrastructure audits and systemic architectural reviews.
+
+[**> Initiate Contact**](mailto:suhas.gowtham08@gmail.com) | [**> Technical Dossier (LinkedIn)**](https://www.linkedin.com/in/suhas-r-gowtham/)
+
+---
+### 🌊 Focus: Deep Work
+*My contributions are not measured by commit frequency, but by architectural impact and system uptime.*
